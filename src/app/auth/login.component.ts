@@ -16,7 +16,6 @@ const log = new Logger('Login');
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
-  version: string | null = environment.version;
   error: string | undefined;
   loginForm!: FormGroup;
   isLoading = false;
@@ -57,9 +56,8 @@ export class LoginComponent implements OnInit {
 
   private createForm() {
     this.loginForm = this.formBuilder.group({
-      username: ['', Validators.required],
+      username: ['', [Validators.required, Validators.minLength(2)]],
       password: ['', Validators.required],
-      remember: true,
     });
   }
 }

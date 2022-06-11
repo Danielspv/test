@@ -9,7 +9,7 @@
   right: 0;
 }
 
-.login-box {
+.login {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,12 +18,14 @@
   min-height: 100%;
 }
 
-.ng-invalid.ng-touched:not(form) {
-  border-left: 4px solid theme-color("danger");
-}
-
 @include media-breakpoint-down(xs) {
   .container {
     width: 100%;
+  }
+}
+
+input {
+  &.ng-touched.ng-invalid {
+    border: solid 1px red;
   }
 }
