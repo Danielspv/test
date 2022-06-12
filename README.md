@@ -1,145 +1,80 @@
-# test
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-This project was generated with [ngX-Rocket](https://github.com/ngx-rocket/generator-ngx-rocket/)
-version 10.1.2
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-# Getting started
 
-1. Go to project folder and install dependencies:
+## Datos a tener encunta para correr el proyecto 
+    Tener php 8.
+    Tener composer apuntando a la version 8 de php. 
+    Tener motor de BD MYSQL.
+    Haber creado la base de datos con el nombre establecido en el .env (blog_app).
+    Correr el Migraciones y seeders de prueba con el siguiente comando (php artisan migrate --seed).
+    Realizar las respetivas prueabas.
+    
+## Docuementacion que se utilizo para realizar la prueba links
+    https://laravel.com/docs/9.x/migrations
+    https://laravel.com/docs/9.x
+    https://laravel.com/docs/5.8/api-authentication
+    https://laravel.com/docs/8.x/validation#available-validation-rules
+    https://laravel.com/docs/8.x/artisan#introduction
+    https://laravel.com/docs/9.x/eloquent-serialization#main-content
+## About Laravel
 
-```sh
-npm install
-```
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-2. Launch development server, and open `localhost:4200` in your browser:
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-```sh
-npm start
-```
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-# Project structure
+## Learning Laravel
 
-```
-dist/                        web app production build
-docs/                        project docs and coding guides
-cypress/                     end-to-end tests (Cypress)
-src/                         project source code
-|- app/                      app components
-|  |- core/                  core module (singleton services and single-use components)
-|  |- shared/                shared module  (common components, directives and pipes)
-|  |- app.component.*        app root component (shell)
-|  |- app.module.ts          app root module definition
-|  |- app-routing.module.ts  app routes
-|  +- ...                    additional modules and components
-|- assets/                   app assets (images, fonts, sounds...)
-|- environments/             values for various build environments
-|- theme/                    app global scss variables and theme
-|- translations/             translations files
-|- index.html                html entry point
-|- main.scss                 global style entry point
-|- main.ts                   app entry point
-|- polyfills.ts              polyfills needed by Angular
-+- test.ts                   unit tests entry point
-reports/                     test and coverage reports
-proxy.conf.js                backend proxy configuration
-```
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-# Main tasks
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-Task automation is based on [NPM scripts](https://docs.npmjs.com/misc/scripts).
+## Laravel Sponsors
 
-| Task                                            | Description                                                                                                      |
-| ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| `npm start`                                     | Run development server on `http://localhost:4200/`                                                               |
-| `npm run serve:sw`                              | Run test server on `http://localhost:4200/` with service worker enabled                                          |
-| `npm run build [-- --configuration=production]` | Lint code and build web app for production (with [AOT](https://angular.io/guide/aot-compiler)) in `dist/` folder |
-| `npm test`                                      | Run unit tests via [Karma](https://karma-runner.github.io) in watch mode                                         |
-| `npm run test:ci`                               | Lint code and run unit tests once for continuous integration                                                     |
-| `npm run e2e`                                   | Run e2e tests using [Cypress](https://www.cypress.io/)                                                           |
-| `npm run lint`                                  | Lint code                                                                                                        |
-| `npm run translations:extract`                  | Extract strings from code and templates to `src/app/translations/template.json`                                  |
-| `npm run docs`                                  | Display project documentation and coding guides                                                                  |
-| `npm run prettier`                              | Automatically format all `.ts`, `.js` & `.scss` files                                                            |
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-When building the application, you can specify the target configuration using the additional flag
-`--configuration <name>` (do not forget to prepend `--` to pass arguments to npm scripts).
+### Premium Partners
 
-The default build configuration is `prod`.
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Cubet Techno Labs](https://cubettech.com)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[Many](https://www.many.co.uk)**
+- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+- **[DevSquad](https://devsquad.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[OP.GG](https://op.gg)**
+- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+- **[Lendio](https://lendio.com)**
 
-## Development server
+## Contributing
 
-Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change
-any of the source files.
-You should not use `ng serve` directly, as it does not use the backend proxy configuration by default.
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code scaffolding
+## Code of Conduct
 
-Run `npm run generate -- component <name>` to generate a new component. You can also use
-`npm run generate -- directive|pipe|service|class|module`.
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-If you have installed [angular-cli](https://github.com/angular/angular-cli) globally with `npm install -g @angular/cli`,
-you can also use the command `ng generate` directly.
+## Security Vulnerabilities
 
-## Additional tools
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-Tasks are mostly based on the `angular-cli` tool. Use `ng help` to get more help or go check out the
-[Angular-CLI README](https://github.com/angular/angular-cli).
+## License
 
-## Code formatting
-
-All `.ts`, `.js` & `.scss` files in this project are formatted automatically using [Prettier](https://prettier.io),
-and enforced via the `test:ci` script.
-
-A pre-commit git hook has been configured on this project to automatically format staged files, using
-(pretty-quick)[https://github.com/azz/pretty-quick], so you don't have to care for it.
-
-You can also force code formatting by running the command `npm run prettier`.
-
-# What's in the box
-
-The app template is based on [HTML5](http://whatwg.org/html), [TypeScript](http://www.typescriptlang.org) and
-[Sass](http://sass-lang.com). The translation files use the common [JSON](http://www.json.org) format.
-
-#### Tools
-
-Development, build and quality processes are based on [angular-cli](https://github.com/angular/angular-cli) and
-[NPM scripts](https://docs.npmjs.com/misc/scripts), which includes:
-
-- Optimized build and bundling process with [Webpack](https://webpack.github.io)
-- [Development server](https://webpack.github.io/docs/webpack-dev-server.html) with backend proxy and live reload
-- Cross-browser CSS with [autoprefixer](https://github.com/postcss/autoprefixer) and
-  [browserslist](https://github.com/ai/browserslist)
-- Asset revisioning for [better cache management](https://webpack.github.io/docs/long-term-caching.html)
-- Unit tests using [Jasmine](http://jasmine.github.io) and [Karma](https://karma-runner.github.io)
-- End-to-end tests using [Cypress](https://www.cypress.io/)
-- Static code analysis: [TSLint](https://github.com/palantir/tslint), [Codelyzer](https://github.com/mgechev/codelyzer),
-  [Stylelint](http://stylelint.io) and [HTMLHint](http://htmlhint.com/)
-- Local knowledgebase server using [Hads](https://github.com/sinedied/hads)
-- Automatic code formatting with [Prettier](https://prettier.io)
-
-#### Libraries
-
-- [Angular](https://angular.io)
-- [Bootstrap 4](https://getbootstrap.com)
-- [ng-bootsrap](https://ng-bootstrap.github.io/)
-- [Font Awesome](http://fontawesome.io)
-- [RxJS](http://reactivex.io/rxjs)
-- [ngx-translate](https://github.com/ngx-translate/core)
-- [Moment.js](https://momentjs.com)
-
-#### Coding guides
-
-- [Angular](docs/coding-guides/angular.md)
-- [TypeScript](docs/coding-guides/typescript.md)
-- [Sass](docs/coding-guides/sass.md)
-- [HTML](docs/coding-guides/html.md)
-- [Unit tests](docs/coding-guides/unit-tests.md)
-- [End-to-end tests](docs/coding-guides/e2e-tests.md)
-
-#### Other documentation
-
-- [I18n guide](docs/i18n.md)
-- [Working behind a corporate proxy](docs/corporate-proxy.md)
-- [Updating dependencies and tools](docs/updating.md)
-- [Using a backend proxy for development](docs/backend-proxy.md)
-- [Browser routing](docs/routing.md)
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
